@@ -21,7 +21,7 @@ pipeline {
 
  post {
         always {
-            junit '$WORKSPACE/test-results.xml'
+            junit 'Z:/Jenkins3/workspace/mocha-apigee-js/test-results.xml'
         }
     }
 }
