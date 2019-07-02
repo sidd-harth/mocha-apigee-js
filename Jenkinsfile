@@ -21,7 +21,8 @@ pipeline {
 
  post {
         always {
-          istanbul report --root $WORKSPACE --dir $WORKSPACE/coverage
+          //istanbul report --root $WORKSPACE --dir $WORKSPACE/coverage
+          cobertura coberturaReportFile: '$WORKSPACE/coverage/*.xml'
         }
     }
 }

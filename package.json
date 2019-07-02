@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha --reporter mocha-xunit-reporter",
-    "coverage": "nyc --reporter html --reporter text npm test"
+    "coverage": "nyc --reporter html --reporter cobertura --reporter text npm test"
   },
   "author": "",
   "license": "ISC",
