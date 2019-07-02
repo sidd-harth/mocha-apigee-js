@@ -11,6 +11,7 @@ pipeline {
   stage('mocha test') {
    steps {
     bat "npm -v"
+    bat "npm install"
     //bat "npm install -g apigeelint"
     bat "npm test"
     bat "npm run coverage"
