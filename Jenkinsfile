@@ -21,7 +21,7 @@ pipeline {
 
  post {
         always {
-          bat "xunit Z:/Jenkins3/workspace/mocha-apigee-js/test-results.xml"
+          junit '*.xml'
         }
     }
 }
