@@ -21,7 +21,7 @@ pipeline {
 
  post {
         always {
-          junit '*.xml'
+          istanbul report --root $WORKSPACE --dir $WORKSPACE/coverage
         }
     }
 }
