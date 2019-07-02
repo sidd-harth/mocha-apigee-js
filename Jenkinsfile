@@ -22,7 +22,7 @@ pipeline {
  post {
         always {
           //istanbul report --root $WORKSPACE --dir $WORKSPACE/coverage
-          cobertura coberturaReportFile: '$WORKSPACE/coverage/*.xml'
+          cobertura coberturaReportFile: 'Z:/Jenkins3/workspace/mocha-apigee-js/coverage/cobertura-coverage.xml'
         }
     }
 }
