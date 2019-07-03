@@ -21,7 +21,7 @@ pipeline {
 
  post {
         always {
-          step([$class: 'CoberturaPublisher', coberturaReportFile: '$WORKSPACE/coverage/cobertura-coverage.xml'])
+          step([$class: 'CoberturaPublisher', coberturaReportFile: 'Z:/Jenkins3/workspace/mocha-apigee-js/coverage/cobertura-coverage.xml'])
         }
       }
 }
