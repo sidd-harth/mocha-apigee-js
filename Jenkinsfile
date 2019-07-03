@@ -21,7 +21,8 @@ pipeline {
 
  post {
         always {
-          step([$class: 'CoberturaPublisher', coberturaReportFile: 'Z:/Jenkins3/workspace/mocha-apigee-js/coverage/cobertura-coverage.xml'])
+          bat "cd Z:/Jenkins3/workspace/mocha-apigee-js/coverage && cp cobertura-coverage.xml $WORKSPACE"
+          step([$class: 'CoberturaPublisher', coberturaReportFile: 'cobertura-coverage.xml'])
         }
       }
 }
