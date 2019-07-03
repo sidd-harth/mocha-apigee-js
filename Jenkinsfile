@@ -21,8 +21,7 @@ pipeline {
 
  post {
         always {
-          //istanbul report --root $WORKSPACE --dir $WORKSPACE/coverage
-          cobertura coberturaReportFile: '**/*.xml'
+          step([$class: 'CoberturaPublisher', coberturaReportFile: '/coverage/cobertura-coverage.xml'])
         }
-    }
+      }
 }
