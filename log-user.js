@@ -27,5 +27,7 @@ try {
 			JSON.stringify(userPayload)
 	);
 	httpClient.send(vRequest);
+	context.setVariable("id",ID);
+	context.setVariable("name",full_name);
 } catch (e) {}
 
